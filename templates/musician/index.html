@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ index.site_title }}</title>
+  <link rel="stylesheet" href="index.css">
+
+  <script>
+  function openTab(evt, tabName) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
+
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+  }
+
+  </script>
+
+
+</head>
+<body>
+  <div class="main main-mobile">
+
+    <div class="title">
+      <h2>{{ index.title }}</h2>
+    </div>
+
+    <div class="info">
+      <div class="bio">
+        {{ index.description }}
+      </div>
+      <div class="links">
+        {{ #index.social }}
+          <a href="{{{ link }}}"><img src="resources/images/{{ site }}.png"></a>
+        {{ /index.social }}
+      </div>
+    </div>
+
+    <div class="tab">
+      {{ #index.tabs }}
+      <button class="tablinks" onclick="openTab(event, '{{ name }}')">{{ name }}</button>
+      {{ /index.tabs }}
+    </div>
+
+    {{ #index.tabs }}
+      <div id="{{ name }}" class="tabcontent">
+        {{ #contents }}
+          {{{ content }}}
+        {{ /contents }}
+      </div>
+    {{ /index.tabs }}
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+body{
+  background-color: {{ style.background_color }};
+}
+.main{
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  background-color: {{ style.main_color }};
+}
+
+body{
+  height: 98vh;
+  width: 99vw;
+}
+.main{
+  padding: 25px 0 25px 0;
+  max-width: 90%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.info{
+  height: 50vh;
+}
+.profile-image{
+  display: inline-block;
+  float: left;
+  height: auto;
+  width: 30%;
+}
+.profile-image > img{
+  height: 100%;
+  width: 100%;
+}
+.info-inner{
+  display: inline-block;
+  float: right;
+  max-width: 60%;
+}
+.title{
+  font-size: 30px;
+}
+.title > h2{
+  margin: 0;
+}
+.bio{
+  font-size: 25px;
+}
+.contact{
+  margin: 25px 0 0 0;
+}
+.contact-title{
+  font-size: 22px;
+  font-weight: bold;
+}
+.contact-link{
+  font-size: 25px;
+  color: grey;
+}
+.links{
+  margin: 50px 0 0 0;
+}

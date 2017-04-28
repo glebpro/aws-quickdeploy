@@ -1,0 +1,41 @@
+{
+  "name": "aws-quickdeploy",
+  "description": "Quickly deploy a site from a single config file.",
+  "version": "1.0.8",
+  "main": "gruntfile.js",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-aws-s3": "^0.14.5",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-convert": "^0.1.12",
+    "grunt-mustache-render": "^1.9.2",
+    "grunt-prompt": "^1.3.3",
+    "jsonfile": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "npm install --only=dev --ignore-scripts && cp aws.json data.yml ../.. && node ./add_script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glebpro/aws-quickdeploy.git"
+  },
+  "keywords": [
+    "angular",
+    "template",
+    "mustache",
+    "aws",
+    "s3"
+  ],
+  "author": "Gleb Promokhov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/glebpro/aws-quickdeploy/issues"
+  },
+  "homepage": "https://github.com/glebpro/aws-quickdeploy#readme",
+  "engines": {
+    "node": ">= 0.10.0"
+  }
+}

@@ -1,0 +1,42 @@
+style:
+  background_color: '#fff'
+  main_color: '#fff'
+index:
+  site_title: aws-quickdeploy
+  title: aws-quickdeploy-site
+  description: Here is the bio of aws-quickdeploy-site. Lorem Ipsum.
+  contacts:
+    -
+      type: mobile
+      link: 12345678
+    -
+      type: email
+      link: aws-quickdeploy@github.com
+  social:
+    -
+      link: 'https://www.facebook.com'
+      site: facebook
+    -
+      link: 'https://www.instagram.com'
+      site: instagram
+    -
+      link: 'https://soundcloud.com'
+      site: soundcloud
+    -
+      link: 'https://www.youtube.com'
+      site: youtube
+  tabs:
+    -
+      name: Videos
+      contents:
+        -
+          content: '<iframe src=''https://www.youtube.com/embed/rKeS3RpMEOw'' frameborder=''0'' allowfullscreen></iframe>'
+        -
+          content: '<iframe src=''https://www.youtube.com/embed/IoZ7x-o8UxQ'' frameborder=''0'' allowfullscreen></iframe>'
+    -
+      name: Messages
+      contents:
+        -
+          content: '<h1>Big Title</h1>'
+        -
+          content: '<h2>Small title</h2>'

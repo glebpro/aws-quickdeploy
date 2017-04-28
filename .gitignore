@@ -1,0 +1,5 @@
+.aws.json
+data.json
+app/
+node_modules/
+dev/
