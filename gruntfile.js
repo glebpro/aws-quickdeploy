@@ -3,7 +3,7 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
 
-    aws: grunt.file.readJSON('aws.json'),
+    aws: grunt.file.readJSON('../../aws.json'),
 
     jshint: {
       all: ['gruntfile.js']
@@ -24,7 +24,7 @@ module.exports = function(grunt) {
         files: [
           {
             expand: true,
-            cwd: 'app/',
+            cwd: '../../app/',
             src: ['**'],
             dest: '/'
           }
@@ -42,14 +42,14 @@ module.exports = function(grunt) {
         },
         files: [
           {
-            data: 'data.json',
+            data: '../../data.json',
             template: 'templates/business/index.html',
-            dest: 'app/index.html'
+            dest: '../../app/index.html'
           },
           {
             data: 'data.json',
             template: 'templates/business/index.css',
-            dest: 'app/index.css'
+            dest: '../../app/index.css'
           }
         ]
       },
@@ -59,14 +59,14 @@ module.exports = function(grunt) {
         },
         files: [
           {
-            data: 'data.json',
+            data: '../../data.json',
             template: 'templates/musician/index.html',
-            dest: 'app/index.html'
+            dest: '../../app/index.html'
           },
           {
-            data: 'data.json',
+            data: '../../data.json',
             template: 'templates/musician/index.css',
-            dest: 'app/index.css'
+            dest: '../../app/index.css'
           }
         ]
       },
@@ -83,8 +83,8 @@ module.exports = function(grunt) {
             header: true
           }
         },
-        src: ['data.yml'],
-        dest: 'data.json'
+        src: ['../../data.yml'],
+        dest: '../../data.json'
       }
     },
 
@@ -93,11 +93,11 @@ module.exports = function(grunt) {
         expand: true,
         cwd: 'resources/',
         src: '**',
-        dest: 'app/resources/'
+        dest: '../../app/resources/'
       }
     },
 
-    clean: ['data.json'],
+    clean: ['../../data.json'],
 
     prompt: {
       target: {
