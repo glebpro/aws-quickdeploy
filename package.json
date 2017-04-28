@@ -1,7 +1,7 @@
 {
   "name": "aws-quickdeploy",
   "description": "Quickly deploy a site from a single config file.",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "main": "gruntfile.js",
   "devDependencies": {
     "grunt": "~0.4.5",
